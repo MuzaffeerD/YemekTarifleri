@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="gorselSec"
+    tools:context=".TarifFragment">
+
+
+    <EditText
+        android:id="@+id/YemekMalzemeleri"
+        android:layout_width="355dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="68dp"
+        android:ems="10"
+        android:hint="Yemek Malzemelerini Giriniz"
+        android:inputType="textPersonName"
+        android:text="Yemek Malzemelerini Giriniz"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/YemekAdi" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="339dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="gorselSec"
+        android:src="@drawable/ekle"
+        app:layout_constraintBottom_toTopOf="@+id/YemekAdi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/YemekAdi"
+        android:layout_width="355dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="Yemek Adı Giriniz"
+        android:inputType="textPersonName"
+        android:text="Yemek Adı Giriniz"
+        app:layout_constraintBottom_toTopOf="@+id/YemekMalzemeleri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="kaydet"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/YemekMalzemeleri" />
+</androidx.constraintlayout.widget.ConstraintLayout>
